@@ -1,0 +1,4 @@
+insert into diccionario (numero,palabra) values ('$num',AES_ENCRYPT('$pal','codigodeencriptar'))";
+Hay que usar siempre el mismo codigo de encriptar.
+Para hacer las consultas:
+SELECT numero,AES_DECRYPT(palabra,'codigodeencriptar') FROM diccionario
